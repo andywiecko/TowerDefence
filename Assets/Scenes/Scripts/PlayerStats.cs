@@ -14,6 +14,8 @@ public class PlayerStats : MonoBehaviour {
 	public static int Lives;
 	public int startLives = 10;
 
+	public static int Rounds;
+
 	void Start()
 	{
 		Money = startMoney;
@@ -21,6 +23,8 @@ public class PlayerStats : MonoBehaviour {
 		
 		MoneyText.text = "Money: " + Money.ToString();
 		LivesText.text = "Lives: " + Lives.ToString();
+
+ 		Rounds = 0;
 	}
 	void Update()
 	{

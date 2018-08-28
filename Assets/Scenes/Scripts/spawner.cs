@@ -40,6 +40,7 @@ public class spawner : MonoBehaviour {
 			yield return new WaitForSeconds(0.25f);
 		}
 		waveNumber++;
+		PlayerStats.Rounds++;
 		
 		
 	}

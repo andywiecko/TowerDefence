@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65120b4ec7314cf69d5d2e7a8fbfa87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
+  range: 4
   fireRate: 1
   bulletPrefab: {fileID: 1579454047125944, guid: 7e68f86ede2ec44b8b1844165bfc04e3,
     type: 2}
@@ -415,6 +415,8 @@ MonoBehaviour:
   lineRenderer: {fileID: 120389841235227160}
   impactEffect: {fileID: 198071177829883832}
   impactLight: {fileID: 108858190516529072}
+  damageOverTime: 30
+  slowAmount: 0.5
   enemyTag: enemy
   rotspeed: 10
   partToRotate: {fileID: 4979267602315820}

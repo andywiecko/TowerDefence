@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour {
 
-	public float speed = 5f;
-	private Transform target;
-	private int path_index = -1;
-	public int health = 100;
+	public float startSpeed = 5f;
+
+	[HideInInspector]
+	public float speed;
+	//private Transform target;
+	//private int path_index = -1;
+	public float health = 100;
 	public int moneyPrize = 50;
 
 	public GameObject deathEffect;
 
 	void Start()
 	{
-		next_path();
+		speed = startSpeed;
 	}
 
-	public void TakeDamage(int amount)
+	public void TakeDamage(float amount)
 	{
 		health -= amount;
 		if (health <= 0) Die();
+	}
+
+	public void Slow(float amount)
+	{
+		speed = startSpeed * (1-amount);
 	}
 
 	void Die()
@@ -31,32 +39,5 @@ public class enemy : MonoBehaviour {
 		Destroy(gameObject);
 	}
 
-	void Update()
-	{
-		Vector3 direction = target.position - transform.position;
-		transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
 
-		if ( Vector3.Distance(target.position,transform.position) <= 0.15f)
-		{
-			next_path();
-		}
-
-	}
-
-	void next_path()
-	{
-		if (path_index >= path.point_paths.Length-1)
-		{
-			EndPath();
-			return;
-		}
-		path_index++;
-		target = path.point_paths[path_index];
-	}
-
-	void EndPath()
-	{
-		PlayerStats.Lives--;
-		Destroy(gameObject);	
-	}
 }
