@@ -14,8 +14,10 @@ public class Node : MonoBehaviour {
 	
 	[HideInInspector]
 	public GameObject turret;
+
 	[HideInInspector]
 	public TurretBlueprint turretBlueprint;
+
 	[HideInInspector]
 	public bool isUpgraded = false;
 
@@ -94,6 +96,17 @@ public class Node : MonoBehaviour {
 			isUpgraded = true;
 
 			Debug.Log ("Turret upgraded! Money left: " + PlayerStats.Money);	
+	}
+
+	public void SellTurret()
+	{
+		PlayerStats.Money += turretBlueprint.GetSellAmount();
+
+		GameObject effect = (GameObject) Instantiate(bm.sellEffect, GetBuildPosition(),Quaternion.identity);
+		Destroy(effect,5f);
+
+		Destroy(turret);
+		turretBlueprint = null;
 	}
 
 	void OnMouseEnter()

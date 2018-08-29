@@ -47,7 +47,7 @@ public class spawner : MonoBehaviour {
 	void SpawnEnemy()
 	{
 		enemy enemySpawned = (enemy) Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation);
-		enemySpawned.health += 10*(Mathf.Pow(waveNumber,1.05f)-1);
+		enemySpawned.startHealth += 10*(Mathf.Pow(waveNumber,1.05f)-1);
 
 	}
 }

@@ -20,8 +20,8 @@ public class CameraController : MonoBehaviour {
 			return;
 		}
 		// || Input.mousePosition.y >= Screen.width - panBorderThickness
-		if (Input.GetKeyDown(KeyCode.Escape)) doMovement = !doMovement;
-		if (!doMovement) return;
+		//if (Input.GetKeyDown(KeyCode.Escape)) doMovement = !doMovement;
+		//if (!doMovement) return;
 		if (Input.GetKey("d") )
 		{
 			Debug.Log(Screen.height);

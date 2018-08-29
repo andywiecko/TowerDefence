@@ -19,6 +19,8 @@ public class buildManager : MonoBehaviour {
 	public GameObject standardTurretPrefab;
 	public GameObject missleLauncherPrefab;
 	public GameObject buildEffect;
+	public GameObject sellEffect;
+
 
  	public NodeUI nodeUI;
 
