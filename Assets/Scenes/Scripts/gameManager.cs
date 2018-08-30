@@ -5,6 +5,7 @@ using UnityEngine;
 public class gameManager : MonoBehaviour {
 
 	public static bool gameEnded;
+	public static bool gamePaused;
 
 	public GameObject gameOverUI;
 	
@@ -12,6 +13,7 @@ public class gameManager : MonoBehaviour {
 	void Start()
 	{
 		gameEnded = false;
+		gamePaused = false;
 	}
 
 	void Update ()

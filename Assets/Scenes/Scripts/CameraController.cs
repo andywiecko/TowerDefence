@@ -24,7 +24,6 @@ public class CameraController : MonoBehaviour {
 		//if (!doMovement) return;
 		if (Input.GetKey("d") )
 		{
-			Debug.Log(Screen.height);
 			transform.Translate(Vector3.forward * panSpeed * Time.deltaTime,Space.World);
 		}	
 		if (Input.GetKey("a") )

@@ -12,7 +12,7 @@ public class SpawnerMenu : MonoBehaviour {
 	private float start_countdown = 2f;
 	private int waveNumber = 3;
 
-	// Update is called once per frame
+
 	void Update ()
 	{
 		
@@ -40,5 +40,6 @@ public class SpawnerMenu : MonoBehaviour {
 	void SpawnEnemy()
 	{
 		enemy enemySpawned = (enemy) Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation);
+		enemySpawned.healthBarInfo.SetActive(false);
 	}
 }

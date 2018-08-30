@@ -19,6 +19,9 @@ public class GamePaused : MonoBehaviour {
 	{
 		if (gameManager.gameEnded) return;
 
+		gameManager.gamePaused = !gameManager.gamePaused;
+		Debug.Log("Game paused:" + gameManager.gamePaused);
+
 		ui.SetActive(!ui.activeSelf);
 		
 		if (ui.activeSelf)

@@ -106,6 +106,7 @@ public class Node : MonoBehaviour {
 		Destroy(effect,5f);
 
 		Destroy(turret);
+		isUpgraded = false;
 		turretBlueprint = null;
 	}
 

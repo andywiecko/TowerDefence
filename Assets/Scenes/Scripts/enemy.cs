@@ -20,7 +20,7 @@ public class enemy : MonoBehaviour {
 
 	[Header("Unity Stuff")]
 	public Image healthBar;
-
+	public GameObject healthBarInfo;
 
 	void Start()
 	{
