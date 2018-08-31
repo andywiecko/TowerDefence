@@ -30,7 +30,10 @@ public class spawner : MonoBehaviour {
 
 	void Start()
 	{
+		
 		FillWave();
+		EnemiesAlive = 0;
+
 	}
 
 	void FillWave()
@@ -121,14 +124,14 @@ public class spawner : MonoBehaviour {
 		if (waveNumber == waves.Length)
 		{
 			Debug.Log("Level 1 complete");
-			this.enabled = false;
+		//	this.enabled = false;
 		}		
 		
 	}
 	void SpawnEnemy(GameObject _enemy)
 	{
-		Instantiate(_enemy, spawnPoint.position, spawnPoint.rotation);
-		//enemySpawned.startHealth += 10*(Mathf.Pow(waveNumber,1.05f)-1);
+		GameObject new_enemy =  (GameObject) Instantiate(_enemy, spawnPoint.position, spawnPoint.rotation);
+		new_enemy.GetComponent<enemy>().startHealth += 10*(Mathf.Pow(waveNumber,1.05f)-1);
 		//EnemiesAlive++;
 
 	}

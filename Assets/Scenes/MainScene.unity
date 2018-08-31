@@ -5939,7 +5939,7 @@ MonoBehaviour:
   enemy_tough: {fileID: 1102161124075342, guid: 54b6c0012532b418aa1cb4a2d4d73912,
     type: 2}
   enemy_fast: {fileID: 1102161124075342, guid: f47b6f11818b9494c997fa4a9ed6cee5, type: 2}
-  enemy_boss: {fileID: 1102161124075342, guid: 0d3e257d9fc664bd9b4d80a91ec5a1cd, type: 2}
+  enemy_boss: {fileID: 1102161124075342, guid: 09c7c3a7a10ef4f1481d603268695b95, type: 2}
 --- !u!114 &543722230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5971,7 +5971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoneyText: {fileID: 542531789}
-  startMoney: 100000
+  startMoney: 1000
   LivesText: {fileID: 1274871365}
   startLives: 10
 --- !u!114 &543722232
