@@ -44,6 +44,7 @@ public class EnemyMovement : MonoBehaviour {
 	void EndPath()
 	{
 		PlayerStats.Lives--;
+		spawner.EnemiesAlive--;
 		Destroy(gameObject);	
 	}
 

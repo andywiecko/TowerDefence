@@ -45,6 +45,8 @@ public class enemy : MonoBehaviour {
 		GameObject effect = (GameObject) Instantiate(deathEffect, transform.position,Quaternion.identity);
 		Destroy(effect,5f);
 		PlayerStats.Money += moneyPrize; 
+		spawner.EnemiesAlive--;
+		Debug.Log(spawner.EnemiesAlive);
 		Destroy(gameObject);
 	}
 

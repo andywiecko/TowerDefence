@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114655271061211932}
   - component: {fileID: 114902789554973594}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: enemy_boss
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1c3e2c5ec7a07447a896bfaa46bba4a8, type: 2}
+  - {fileID: 2100000, guid: dac7d6f5b9b2746a7a6024c54376f02f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -189,9 +189,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 2
   speed: 2
-  startHealth: 100
-  moneyPrize: 25
-  deathEffect: {fileID: 1393432233217468, guid: 94943a4137e4e41c3966fbbfdf99159b,
+  startHealth: 1000
+  moneyPrize: 1000
+  deathEffect: {fileID: 1393432233217468, guid: 096b81ef8d1d5464b8030be2353b1a98,
     type: 2}
   healthBar: {fileID: 114790958081532824}
   healthBarInfo: {fileID: 1080656466896152}

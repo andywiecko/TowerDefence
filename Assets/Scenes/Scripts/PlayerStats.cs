@@ -21,15 +21,15 @@ public class PlayerStats : MonoBehaviour {
 		Money = startMoney;
 		Lives = startLives;
 		
-		MoneyText.text = "Money: " + Money.ToString();
-		LivesText.text = "Lives: " + Lives.ToString();
+		MoneyText.text = Money.ToString();
+		LivesText.text = Lives.ToString();
 
  		Rounds = 0;
 	}
 	void Update()
 	{
-		MoneyText.text = "Money: " + Money.ToString();
-		LivesText.text = "Lives: " + Lives.ToString();
+		MoneyText.text = Money.ToString();
+		LivesText.text = Lives.ToString();
 	}
 
 
