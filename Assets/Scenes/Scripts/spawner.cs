@@ -61,14 +61,14 @@ public class spawner : MonoBehaviour {
 			if (enemyType == 1)
 			{
 				waves[i].count = 2*i/4 + 1;
-				waves[i].rate = 3;
+				waves[i].rate = 1;
 				waves[i].enemy = enemyTypes[enemyType];
 			}
 			// fast
 			if (enemyType == 2)
 			{
 				waves[i].count = 5*i/4 + 1;
-				waves[i].rate = 1;
+				waves[i].rate = 3;
 				waves[i].enemy = enemyTypes[enemyType];
 			}
 			// boss
@@ -131,7 +131,7 @@ public class spawner : MonoBehaviour {
 	void SpawnEnemy(GameObject _enemy)
 	{
 		GameObject new_enemy =  (GameObject) Instantiate(_enemy, spawnPoint.position, spawnPoint.rotation);
-		new_enemy.GetComponent<enemy>().startHealth += 10*(Mathf.Pow(waveNumber,1.05f)-1);
+		new_enemy.GetComponent<enemy>().startHealth += 10*(Mathf.Pow(waveNumber,1.1f));
 		//EnemiesAlive++;
 
 	}
