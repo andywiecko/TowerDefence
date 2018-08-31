@@ -131,7 +131,7 @@ public class spawner : MonoBehaviour {
 	void SpawnEnemy(GameObject _enemy)
 	{
 		GameObject new_enemy =  (GameObject) Instantiate(_enemy, spawnPoint.position, spawnPoint.rotation);
-		new_enemy.GetComponent<enemy>().startHealth *= (Mathf.Pow(waveNumber,1.05f));
+		new_enemy.GetComponent<enemy>().startHealth *= (Mathf.Pow(waveNumber,1.045f));
 		//EnemiesAlive++;
 
 	}

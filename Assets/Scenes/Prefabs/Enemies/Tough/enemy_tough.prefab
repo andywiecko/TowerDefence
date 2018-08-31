@@ -190,7 +190,7 @@ MonoBehaviour:
   startSpeed: 1.5
   speed: 2
   startHealth: 500
-  moneyPrize: 100
+  moneyPrize: 125
   deathEffect: {fileID: 1393432233217468, guid: 3fca8452480944d0f81dee3e5a50668c,
     type: 2}
   healthBar: {fileID: 114790958081532824}
