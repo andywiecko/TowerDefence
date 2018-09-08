@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23988287056155744}
   - component: {fileID: 65732386254773642}
   - component: {fileID: 114580300528823804}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561934636434194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14499998, y: 0, z: -0.43499994}
+  m_LocalPosition: {x: 10, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 52acef48d03b34536b24bba536ce9cfe, type: 2}
+  - {fileID: 2100000, guid: e406e2e9ed9f62944923859956d1d8f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,3 +112,9 @@ MonoBehaviour:
   notEnoughResourcesColor: {r: 0.7735849, g: 0, b: 0.15205356, a: 0}
   positionOffset: {x: 0, y: 0.125, z: 0}
   turret: {fileID: 0}
+  turretBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
